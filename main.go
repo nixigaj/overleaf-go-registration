@@ -163,7 +163,7 @@ func main() {
 
 			// Redirect to success page
 			successTmpl.Execute(w, &PageData{
-				Message:     "Email sent. Please check your email inbox, including the spam folder.",
+				Message:     "Registration email sent. Please check your email inbox, including the spam folder.",
 				MessageType: "success",
 			})
 			return
