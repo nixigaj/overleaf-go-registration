@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register - Overleaf Community Edition, Online LaTeX Editor</title>
+    <meta name="twitter:title" content="Register">
+    <meta name="og:title" content="Register">
+    <meta name="description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.">
+    <meta itemprop="description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.">
+    <meta itemprop="image" content="/apple-touch-icon.png">
+    <meta name="image" content="/apple-touch-icon.png">
+    <meta itemprop="name" content="Overleaf Community Edition, the Online LaTeX Editor">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.">
+    <meta name="twitter:image" content="/apple-touch-icon.png">
+    <meta property="og:description" content="An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and more.">
+    <meta property="og:image" content="/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/mask-favicon.svg" color="#046530">
+    <link rel="manifest" href="/web.sitemanifest">
+    <link rel="stylesheet" href="/register/static/css/styles.css">
+    <link rel="stylesheet" href="/register/static/css/styles-overleaf.css">
+    <link rel="alternate" href="https://overleaf.eriks.space/register" hreflang="en">
+    <script type="text/javascript" nonce="0C5qd+npXY1k1pFKN83Xiw==">
+        window.gtag = function() {
+            console.log("would send to GA4", arguments)
+        };
+    </script>
+    <script type="text/javascript" nonce="0C5qd+npXY1k1pFKN83Xiw==">
+        window.ga = function() {
+            console.log("would send to GA", arguments)
+        };
+    </script>
+    <meta name="ol-csrfToken" content="bsHoDXIn-PjtrdT149bF31DDCDYYQ20_k5to">
+    <meta name="ol-baseAssetPath" content="/">
+    <meta name="ol-mathJaxPath" content="/js/libs/mathjax-3.2.2/es5/tex-svg-full.js">
+    <meta name="ol-dictionariesRoot" content="/js/dictionaries/0.0.3/">
+    <meta name="ol-usersEmail" content="">
+    <meta name="ol-ab" data-type="json" content="{}">
+    <meta name="ol-user_id">
+    <meta name="ol-i18n" data-type="json" content="{&quot;currentLangCode&quot;:&quot;en&quot;}">
+    <meta name="ol-splitTestVariants" data-type="json" content="{}">
+    <meta name="ol-splitTestInfo" data-type="json" content="{}">
+    <meta name="ol-isManagedAccount" data-type="boolean">
+    <meta name="ol-bootstrapVersion" data-type="json" content="3">
+</head>
+<body class="thin-footer" data-theme="default">
+<a class="skip-to-content" href="#main-content">Skip to content</a>
+<nav class="navbar navbar-default navbar-main">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-label="Toggle Navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <a class="navbar-brand" href="/" aria-label="Overleaf Community Edition" style="background-image:url(&quot;https://overleaf.eriks.space/overleaf-eriks-space-header.png&quot;)"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- loop over header_extras-->
+                <!-- logged out-->
+                <!-- register link-->
+                <li class="primary">
+                    <a href="/register" event-tracking="menu-clicked-register" event-tracking-action="clicked" event-tracking-trigger="click" event-tracking-mb="true" event-segmentation="{&quot;page&quot;:&quot;/register&quot;}">Sign up</a>
+                </li>
+                <!-- login link-->
+                <li>
+                    <a href="/login" event-tracking="menu-clicked-login" event-tracking-action="clicked" event-tracking-trigger="click" event-tracking-mb="true" event-segmentation="{&quot;page&quot;:&quot;/register&quot;}">Log in</a>
+                </li>
+                <!-- projects link and account menu-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="content content-alt" id="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+                <div class="card">
+                    <div class="page-header">
+                        <h1 _msthash="1612143" _msttexthash="71604" style="text-align: left;">Register</h1>
+                    </div>
+                    {{if .Message}}
+                    <div class="message {{.MessageType}}">{{.Message}}</div>
+                    {{end}}
+                    <form name="loginForm" method="POST"
+                          class="ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+                          id="registration-form">
+                        <div class="form-group">
+                            <label for="email">Email:</label><br>
+                            <input
+                                    id="email" class="form-control ng-pristine ng-isolate-scope ng-empty ng-valid-email ng-invalid ng-invalid-required ng-touched"
+                                    type="email" name="email" required="" placeholder="email@example.com"
+                                    ng-model="email" ng-model-options="{ updateOn: 'blur' }" focus="true"
+                                    _mstplaceholder="329745" style="text-align: left;" />
+                        </div>
+                        <div class="actions">
+                            <button class="btn-primary btn" type="submit">
+									<span _msthash="2371122" _msttexthash="94068">
+										Send registration email
+									</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="site-footer-content hidden-print">
+        <div class="row">
+            <ul class="col-md-9">
+                <li>Overleaf Community Edition instance hosted with ❤ by <a href="https://eriks.space">Erik Junsved</a>
+                </li>
+            </ul>
+            <ul class="col-md-3 text-right">
+                <li>
+                    <a href="https://github.com/nixigaj">
+                        <i class='fa fa-github-square'></i> My GitHub </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="cookie-banner hidden-print hidden">
+    <div class="cookie-banner-content">We only use cookies for essential purposes and to improve your experience on our site. You can find out more in our <a href="/legal#Cookies">cookie policy</a>. </div>
+    <div class="cookie-banner-actions">
+        <button class="btn btn-link btn-sm" type="button" data-ol-cookie-banner-set-consent="essential">Essential cookies only</button>
+        <button class="btn btn-primary btn-sm" type="button" data-ol-cookie-banner-set-consent="all">Accept all cookies</button>
+    </div>
+</div>
+
+</body>
+</html>

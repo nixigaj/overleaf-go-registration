@@ -1,0 +1,8 @@
+# Editors
+.idea
+.vscode
+
+# Executables
+overleaf-go-registration
+overleaf-go-registration.exe
+run.sh
