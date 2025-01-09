@@ -110,6 +110,12 @@ func main() {
 		log.Fatalf("Failed to parse forbidden template: %v", err)
 	}
 
+	successTemplatePath := filepath.Join(config.TemplatesDir, "register-success.html")
+	successTmpl, err := template.ParseFiles(successTemplatePath)
+	if err != nil {
+		log.Fatalf("Failed to parse success template: %v", err)
+	}
+
 	// Create static file server
 	staticFileServer := http.FileServer(http.Dir(config.StaticDir))
 
@@ -155,7 +161,8 @@ func main() {
 				return
 			}
 
-			tmpl.Execute(w, &PageData{
+			// Redirect to success page
+			successTmpl.Execute(w, &PageData{
 				Message:     "Email sent. Please check your email inbox, including the spam folder.",
 				MessageType: "success",
 			})
